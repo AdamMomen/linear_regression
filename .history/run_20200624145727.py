@@ -36,4 +36,3 @@ model = sklearn.linear_model.LinearRegression()
 model.fit(X, Y)
 
 X_new = [[22587]]
-print(model.predict(X_new))

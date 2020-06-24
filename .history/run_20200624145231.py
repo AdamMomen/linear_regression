@@ -30,10 +30,5 @@ Y = np.c_[country_stats["Life satisfaction"]]
 
 # Visualize the data
 country_stats.plot(kind='scatter', x="GDP per capita", y="Life satisfaction")
+
 plt.show()
-
-model = sklearn.linear_model.LinearRegression()
-model.fit(X, Y)
-
-X_new = [[22587]]
-print(model.predict(X_new))
